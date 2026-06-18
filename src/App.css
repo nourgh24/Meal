@@ -1,0 +1,133 @@
+/* إعدادات عامة للخط والصفحة */
+body {
+  background-color: #f8f9fa;
+  direction: rtl; /* لجعل الكرت متناسق مع اللغة العربية */
+}
+
+.meal-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  max-width: 350px;
+  margin: 40px auto;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  border: 1px solid #edf2f7;
+}
+
+.meal-card:hover {
+  transform: translateY(-5px);
+}
+
+.meal-img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.meal-info {
+  padding: 20px 20px 10px 20px;
+  text-align: left;
+}
+
+.meal-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0 0 8px 0;
+}
+
+.meal-price {
+  font-size: 1.1rem;
+  color: #bd5252; 
+  font-weight: 600;
+  margin: 0;
+}
+
+.counter-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: #f7fafc;
+  margin: 10px 20px;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.quantity-label {
+  font-size: 1rem;
+  color: #718096;
+  font-weight: 500;
+  text-align: left; 
+}
+
+.count-number {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #2d3748;
+  min-width: 40px;
+  text-align: center;
+  text-align: left;
+}
+
+.buttons-group {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px 25px 20px;
+  gap: 10px;
+}
+
+.buttons-group button {
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+
+.btn-add {
+  flex: 2;
+  background-color: #61ac84; 
+  color: white;
+  padding: 12px;
+  font-size: 1.4rem;
+  border-radius: 10px;
+}
+
+.btn-add:hover {
+  background-color: #b4ddc8;
+}
+
+.btn-del {
+  flex: 2;
+  background-color: #b67373; 
+  color: white;
+  padding: 12px;
+  font-size: 1.4rem;
+  border-radius: 10px;
+}
+
+.btn-del:hover {
+  background-color: #fedddd;
+}
+
+.btn-reset {
+  flex: 1;
+  background-color: #edf2f7; 
+  color: #4a5568;
+  padding: 12px 5px;
+  font-size: 0.9rem;
+  border-radius: 10px;
+}
+
+.btn-reset:hover {
+  background-color: #e2e8f0;
+  color: #2d3748;
+}
+
+
+.buttons-group button:active {
+  transform: scale(0.95);
+}
